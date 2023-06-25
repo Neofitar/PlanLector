@@ -1,0 +1,11 @@
+/*Baner por facultad*/
+
+.banner-fac {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-facultad img{
+    width: 100%;
+}
+

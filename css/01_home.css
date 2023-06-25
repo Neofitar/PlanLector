@@ -1,0 +1,183 @@
+/*Header*/
+header {
+    background-color:  #124622;
+    padding: 0;
+}
+
+.logos-dep {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos-dep img {
+    width: 250px;
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+
+
+/*Menú por facultades*/
+
+.banner-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.banner-home img {
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+nav img {
+    width: 50px;
+}
+
+
+.nav-facultades ul {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 15px;
+}
+
+.nav-facultades il {
+    padding: 10px 25px;
+    border: 1px solid var(--background-negro);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px;
+    gap: 10px;
+}
+
+.nav-facultades a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-facultades il:hover {
+    transition: 0.3s;
+    background-color: #124622;
+    color: var(--background-blanco);
+}
+
+.nav-facultades a:hover {
+    transition: 0.3s;
+    color: var(--background-blanco);
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    background-color: #124622;
+    color: var(--background-blanco);
+    padding: 10px 0;
+}
+
+/*Ventanas responsivas*/
+@media screen and (max-width: 1070px) {
+    .banner-home img {
+        transition: 1s;
+        width: 260px;
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-facultades il {
+        transition: 1s;
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    .nav-facultades il {
+        transition: 1s;
+        width: 200px;
+    }
+
+    .banner-home img {
+        transition: 1s;
+        width: 200px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 796px) {
+    .banner-menu {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nav-facultades il {
+        transition: 1s;
+        width: 380px;
+    }
+
+    .section-nav:first-child {
+        order: 1;
+    }
+
+    .section-banner {
+        order: 2;
+    }
+
+    .logos-dep img {
+        transition: 1s;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-facultades il {
+        transition: 1s;
+        width: 300px;
+    }
+
+    .logos-dep {
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-facultades il {
+        transition: 1s;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 308px) {
+    .nav-facultades il {
+        transition: 1s;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 265px) {
+    .nav-facultades il {
+        transition: 1s;
+        width: 110px;
+    }
+
+    .section-nav img {
+        display: none;
+    }
+
+    .nav-facultades a {
+        text-align: center;
+        font-size: 14px;
+        justify-content: center;
+    }
+}
