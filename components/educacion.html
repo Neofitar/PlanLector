@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#logos-dep_1").load("/components/header.html");
+            $("#universidad_1").load("/components/footer.html");
+        });
+    </script>
+
+    <link rel="stylesheet" href="../css/resert.css">
+    <link rel="stylesheet" href="../css/colores.css">
+    <link rel="stylesheet" href="../css/01_home.css">
+    <link rel="stylesheet" href="../css/02_facultades.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/Escudo_acolor.png" type="image/x-icon">
+    <title>¡Ciencias de la Educación!</title>
+</head>
+
+<body>
+    <main>
+        <header class="header-elements">
+            <div id="logos-dep_1"></div>
+        </header>
+        <section class="banner-fac">
+            <div class="banner-facultad">
+                <a href="/index.html">
+                    <img src="../img/Educación.png" alt="facultad">
+                </a>
+            </div>
+        </section>
+        </section>
+
+        <section class="all-books">
+            <div class="all-books-literatura">
+                <h2 class="title-categoria">Literatura y goce</h2>
+                <ul class="all-books" data-literatura></ul>
+            </div>
+
+            <div class="all-books-comunicativa">
+                <h2 class="title-categoria">Comunicativa y participativa</h2>
+                <ul class="all-books" data-comunicativa></ul>
+            </div>
+            <div class="all-books-academica">
+                <h2 class="title-categoria">Académica-epistémica</h2>
+                <ul class="all-books" data-academica></ul>
+            </div>
+        </section>
+        <footer>
+            <div id="universidad_1"></div>
+        </footer>
+
+    </main>
+    <script src="../service/educación.js"></script>
+</body>
+
+</html>
