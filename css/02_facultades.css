@@ -26,10 +26,12 @@
 }
 
 .title-categoria {
-    text-align: center;
+    text-align: left;
     border-bottom: solid 2px #124622;
     padding-bottom: 20px;
+    margin: 0 30px;
 }
+
 
 .books {
     width: 300px;

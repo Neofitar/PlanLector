@@ -1,7 +1,7 @@
 const crearNovedad = (titulo, autor, url, year, idioma, area, editorial) => {
   const novedad = document.createElement('div');
 
-  const detallesNovedad = `<div class="books" id="books-derecho">
+  const detallesNovedad = `<div class="books" id="books-economia">
     <img class="cover" src="../img/reading-book.jpg" alt="${titulo}">
     <div class="books-details">
         <h2 class="books-titulo">${titulo}</h2>
@@ -9,7 +9,7 @@ const crearNovedad = (titulo, autor, url, year, idioma, area, editorial) => {
         <p class="books-descripcion">${editorial} | <strong>${year}</strong></p>
         <p class="books-descripcion">${idioma}</p>
         <p class="books-area">${area}</p>
-        <li class="button-acceso" id="button-acceso-derecho"><a href="${url}" target="_blank">Consulta aquí</a></li>
+        <li class="button-acceso" id="button-acceso-economia"><a href="${url}" target="_blank">Consulta aquí</a></li>
     </div>`;
 
   novedad.innerHTML = detallesNovedad;
