@@ -1,8 +1,8 @@
-const crearNovedad = (titulo, autor, url, year, idioma, area, editorial) => {
+const crearNovedad = (titulo, autor, url, year, idioma, area, editorial, cover) => {
   const novedad = document.createElement('div');
 
   const detallesNovedad = `<div class="books" id="books">
-    <img class="cover" src="../img/reading-book.jpg" alt="${titulo}">
+    <img class="cover" src="${cover}" alt="${titulo}">
     <div class="books-details">
         <h2 class="books-titulo">${titulo}</h2>
         <h3 class="books-autor">${autor}</h3>
@@ -58,16 +58,16 @@ const crearNovedad = (titulo, autor, url, year, idioma, area, editorial) => {
   };
   
   literatura.libros.forEach(libro => {
-    const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial);
+    const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial, libro.cover);
     totalLiteratura.appendChild(nuevaNovedad);
   });
   
   comunicativa.libros.forEach(libro => {
-    const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial);
+    const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial, libro.cover);
     totalComunicativa.appendChild(nuevaNovedad);
   });
   
   academica.libros.forEach(libro => {
-    const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial);
+    const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial, libro.cover);
     totalAcademica.appendChild(nuevaNovedad);
   });

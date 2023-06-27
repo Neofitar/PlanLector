@@ -228,6 +228,11 @@
         align-items: center;
     }
 
+    .title-categoria {
+        transition: 0.2;
+        text-align: center;
+    }
+
     .books {
         display: flex;
         flex-direction: column;
