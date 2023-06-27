@@ -27,14 +27,18 @@
 
 .title-categoria {
     text-align: left;
-    border-bottom: solid 2px #124622;
-    padding-bottom: 20px;
-    margin: 0 30px;
+    font-size: 25px;
+    border-bottom: solid 3px #124622;
+    padding: 20px 20px;
+    margin: 30px 30px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: var(--background-gris);
 }
 
 
 .books {
-    width: 300px;
+    width: 400px;
     height: 280px;
     display: flex;
     justify-content: center;
@@ -81,7 +85,7 @@
 }
 
 .books img {
-    width: 100px;
+    width: 40%;
     margin: 10px;
     border-radius: 20px;
     object-fit: cover;
