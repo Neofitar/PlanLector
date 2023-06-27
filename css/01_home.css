@@ -74,6 +74,10 @@ nav img {
     color: var(--background-blanco);
 }
 
+.nav-facultades p {
+    font-weight: bold;
+}
+
 /*footer*/
 
 footer {
