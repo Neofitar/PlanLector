@@ -1,6 +1,6 @@
 /*Header*/
 header {
-    background-color:  #124622;
+    background-color: #124622;
     padding: 0;
 }
 
@@ -25,7 +25,7 @@ header {
     align-items: center;
     padding: 2%;
     gap: 15px;
-    margin: 10px 0;
+    margin: 7%;
 }
 
 .banner-home img {
@@ -49,11 +49,11 @@ nav img {
 
 .nav-facultades il {
     padding: 10px 25px;
-    border: 1px solid var(--background-negro);
     border-radius: 10px;
     cursor: pointer;
     width: 300px;
     gap: 10px;
+    background-color: #e4e4e4;
 }
 
 .nav-facultades a {
@@ -63,16 +63,37 @@ nav img {
     gap: 15px;
 }
 
-.nav-facultades il:hover {
-    transition: 0.3s;
-    background-color: #124622;
-    color: var(--background-blanco);
+#nav-educacion:hover {
+    transition: 0.1s;
+    border: 3px solid var(--color-f-educacion);
 }
 
-.nav-facultades a:hover {
-    transition: 0.3s;
-    color: var(--background-blanco);
+#nav-arquitectura:hover {
+    transition: 0.1s;
+    border: 3px solid var(--color-f-arquitectura);
 }
+
+#nav-economia:hover {
+    transition: 0.1s;
+    border: 3px solid var(--color-f-economia);
+}
+
+#nav-ingenieria:hover {
+    transition: 0.1s;
+    border: 3px solid var( --color-f-ingenieria);
+}
+
+#nav-derecho:hover {
+    transition: 0.1s;
+    border: 3px solid var(--color-f-derecho);
+}
+
+#nav-multi:hover {
+    transition: 0.1s;
+    border: 3px solid var(--background-multi);
+}
+
+
 
 .nav-facultades p {
     font-weight: bold;
@@ -97,12 +118,27 @@ footer {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .banner-menu {
+        transition: 1s;
+        margin: 12%;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .nav-facultades il {
         transition: 1s;
         width: 210px;
     }
 }
+
+@media screen and (max-width: 988px) {
+    .banner-menu {
+        transition: 1s;
+        margin: 13%;
+    }
+}
+
 
 @media screen and (max-width: 844px) {
     .nav-facultades il {
@@ -114,6 +150,14 @@ footer {
         transition: 1s;
         width: 200px;
         height: 280px;
+    }
+}
+
+
+@media screen and (max-width: 821px) {
+    .banner-menu {
+        transition: 1s;
+        margin: 18%;
     }
 }
 

@@ -10,5 +10,9 @@
     --color-f-arquitectura:#5F2718;
     --letra:'Roboto', sans-serif;
 }
+body {
+    width: 100%;
+    background-color: #FAF9F8;
+}
 
 
