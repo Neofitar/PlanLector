@@ -25,34 +25,34 @@ const totalAcademica = document.querySelector("[data-academica]");
 
 const literatura = {
   libros: [
-    { id: '77', cover: '/img/portadas/77.png', titulo: 'Quién Domina El Mundo', autor: 'Noam Chomsky', year: '2016', editorial: 'Editorial: Edic B', idioma: 'Español', area: 'Arte y estética', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=253594' },
-    { id: '78', cover: '/img/portadas/78.png', titulo: 'La Teoría De Lo Grotesco', autor: 'Francisco Mares Aliaga', year: '2023', editorial: 'Editorial Instituto Juan Andrés', idioma: 'Español', area: 'Arte y estética', url: 'N/A' },
-    { id: '79', cover: '/img/portadas/79.png', titulo: 'Los Ejércitos', autor: 'Evelio Roseo', year: '2007', editorial: 'Editorial -Tusquets', idioma: 'Español', area: 'Arte y estética', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=189460' },
+    {id: '79', cover: '/img/portadas/79.png', titulo: 'Los ejércitos', autor: 'Evelio Roseo', year: '2007', editorial: 'Editorial Tusquets', idioma: 'Español', area: 'Arte y estética', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=189460'},
+    {id: '78', cover: '/img/portadas/78.png', titulo: 'La teoría de lo grotesco', autor: 'Francisco Mares Aliaga', year: '2023', editorial: 'Editorial Instituto Juan Andrés', idioma: 'Español', area: 'Arte y estética', url: '/components/otros.html'},
+    {id: '77', cover: '/img/portadas/77.png', titulo: 'Quién domina el mundo', autor: 'Noam Chomsky', year: '2016', editorial: 'Editorial Edic B.', idioma: 'Español', area: 'Arte y estética', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=253594'},
   ]
 };
 
 const comunicativa = {
   libros: [
-    {id: '71', cover: '/img/portadas/71.png', titulo: 'La Sociedad Del Cansancio', autor: 'Byung-Chul Han', year: '2002', editorial: 'Herder', idioma: 'Español', area: 'Historia y Filosofía', url: 'https://elibro-net.bibliodigital.ugc.edu.co/es/lc/ugc/titulos/214578'},
-    {id: '72', cover: '/img/portadas/72.png', titulo: 'Magdalena River Of Dreams', autor: 'Wade Davis', year: '2021', editorial: 'Editorial Alfred A. Knopf', idioma: 'Inglés', area: 'Historia y Filosofía', url: 'https://ugc.overdrive.com/media/6449700'},
-    {id: '73', cover: '/img/portadas/73.png', titulo: 'El Mapa Criminal En Colombia. La Nueva Ola De Violencia Y La Paz Total', autor: 'Ariel Ávila Martínez', year: '2022', editorial: 'Editorial Aguilar', idioma: 'Español', area: 'Historia y Filosofía', url: 'https://ugc.overdrive.com/media/9561239'},
-    {id: '74', cover: '/img/portadas/74.png', titulo: 'La Civilización Del Espectáculo', autor: 'Mario Vargas Llosa', year: '2012', editorial: 'Alfaguara', idioma: 'Español', area: 'Diversidad cultural', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254361'},
-    {id: '75', cover: '/img/portadas/75.png', titulo: 'Comunicación Y Poder', autor: 'Manuel Castells', year: '2009', editorial: 'Alianza Editorial', idioma: 'Español', area: 'Diversidad cultural', url: 'https://ugc.overdrive.com/media/3804371'},
-    {id: '76', cover: '/img/portadas/76.png', titulo: 'A La Velocidad De Byte', autor: 'Samuel Castro', year: '2008', editorial: 'Universidad Eafit', idioma: 'Español', area: 'Diversidad cultural', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=11510'},
+    {id: '73', cover: '/img/portadas/73.png', titulo: 'El mapa criminal en Colombia. La nueva ola de violencia y la paz total', autor: 'Ariel Ávila Martínez', year: '2022', editorial: 'Editorial Aguilar', idioma: 'Español', area: 'Historia y Filosofía', url: 'https://ugc.overdrive.com/media/9561239'},
+    {id: '71', cover: '/img/portadas/71.png', titulo: 'La sociedad del cansancio', autor: 'Byung-Chul Han', year: '2002', editorial: 'Herder', idioma: 'Español', area: 'Historia y Filosofía', url: 'https://elibro-net.bibliodigital.ugc.edu.co/es/lc/ugc/titulos/214578'},
+    {id: '75', cover: '/img/portadas/75.png', titulo: 'Comunicación y poder', autor: 'Manuel Castells', year: '2009', editorial: 'Alianza', idioma: 'Español', area: 'Diversidad cultural', url: 'https://ugc.overdrive.com/media/3804371'},
+    {id: '74', cover: '/img/portadas/74.png', titulo: 'La civilización del espectáculo', autor: 'Mario Vargas Llosa', year: '2012', editorial: 'Alfaguara', idioma: 'Español', area: 'Diversidad cultural', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254361'},
+    {id: '76', cover: '/img/portadas/76.png', titulo: 'A la velocidad de byte', autor: 'Samuel Castro', year: '2008', editorial: 'Universidad Eafit', idioma: 'Español', area: 'Diversidad cultural', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=11510'},
+    {id: '72', cover: '/img/portadas/72.png', titulo: 'Magdalena River of Dreams', autor: 'Wade Davis', year: '2021', editorial: 'Editorial Alfred A. Knopf', idioma: 'Inglés', area: 'Historia y Filosofía', url: 'https://ugc.overdrive.com/media/6449700'},
   ]
 };
 
 const academica = {
   libros: [
-    {id: '62', cover: '/img/portadas/62.png', titulo: 'Cartas A Quien Pretende Enseñar', autor: 'Paulo Freire', year: '2008', editorial: 'Siglo Xxi Editores Argentina', idioma: 'Español', area: 'Disciplinar', url: 'https://ugc.overdrive.com/media/3804359'},
-    {id: '63', cover: '/img/portadas/63.png', titulo: 'La Emoción De Aprender', autor: 'Cesar Bona', year: '2019', editorial: 'Prh Grupo Editorial', idioma: 'Español', area: 'Disciplinar', url: 'https://ugc.overdrive.com/media/4229032'},
-    {id: '64', cover: '/img/portadas/64.png', titulo: 'Los Modelos Pedagógicos: "Hacia Una Pedagogía Dialogante"', autor: 'Julian De Zubiria Zamper', year: '2006', editorial: 'Magisterio', idioma: 'Español', area: 'Disciplinar', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=9122'},
-    {id: '65', cover: '/img/portadas/65.png', titulo: 'Orlando Flans Borda Y La Investigación Participativa', autor: 'Nicolas Armando Herrera /Alfonso Torres Carrillo', year: '2003', editorial: 'Laborartorio Educativo', idioma: 'Español', area: 'Investigativa', url: 'N/A'},
-    {id: '66', cover: '/img/portadas/66.png', titulo: 'Pensar Epistémico, Educación Popular E Investigación Participativa', autor: 'Alfonso Torres Carrillo', year: '2019', editorial: 'Editora Nómada. Ipecal', idioma: 'Español', area: 'Investigativa', url: 'N/A'},
-    {id: '67', cover: '/img/portadas/67.png', titulo: 'Metodología De La Investigación. Las Rutas Cuantitativa, Cualitativa Y Mixta', autor: 'Hernández-Sampieri, R. & Mendoza, C', year: '2018', editorial: 'Editorial Mc Graw Hill', idioma: 'Español', area: 'Investigativa', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=198501'},
-    {id: '68', cover: '/img/portadas/68.png', titulo: 'La Cocina De La Escritura', autor: 'Daniel Cassany', year: '1993', editorial: 'Anagrama', idioma: 'Español', area: 'Formación de lectura académica', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=198998'},
-    {id: '69', cover: '/img/portadas/69.png', titulo: 'Las Claves De La Argumentación', autor: ' Anthony Weston', year: '2002', editorial: 'Ariel', idioma: 'Español', area: 'Formación de lectura académica', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=28630'},
-    {id: '70', cover: '/img/portadas/70.png', titulo: 'Culturas Híbridas', autor: ' Néstor García Canclini', year: '1990', editorial: 'Casa Del Libro', idioma: 'Español', area: 'Formación de lectura académica', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=32898'},
+    {id: '69', cover: '/img/portadas/69.png', titulo: 'Las claves de la argumentación', autor: 'Anthony Weston', year: '2002', editorial: 'Ariel', idioma: 'Español', area: 'Formación de lectura académica', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=28630'},
+    {id: '70', cover: '/img/portadas/70.png', titulo: 'Culturas híbridas', autor: 'Néstor García Canclini', year: '1990', editorial: 'Casa del Libro', idioma: 'Español', area: 'Formación de lectura académica', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=32898'},
+    {id: '66', cover: '/img/portadas/66.png', titulo: 'Pensar epistémico, educación popular e investigación participativa', autor: 'Alfonso Torres Carrillo', year: '2019', editorial: 'Editora Nómada', idioma: 'Español', area: 'Investigativa', url: '/components/otros.html'},
+    {id: '63', cover: '/img/portadas/63.png', titulo: 'La emoción de aprender', autor: 'Cesar Bona', year: '2019', editorial: 'PRH Grupo Editorial', idioma: 'Español', area: 'Disciplinar', url: 'https://ugc.overdrive.com/media/4229032'},
+    {id: '68', cover: '/img/portadas/68.png', titulo: 'La cocina de la escritura', autor: 'Daniel Cassany', year: '1993', editorial: 'Anagrama', idioma: 'Español', area: 'Formación de lectura académica', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=198998'},
+    {id: '67', cover: '/img/portadas/67.png', titulo: 'Metodología de la investigación. Las rutas cuantitativa, cualitativa y mixta', autor: 'Hernández-Sampieri, R. & Mendoza, C.', year: '2018', editorial: 'Editorial Mc Graw Hill', idioma: 'Español', area: 'Investigativa', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=198501'},
+    {id: '64', cover: '/img/portadas/64.png', titulo: 'Los modelos pedagógicos: "hacia una pedagogía dialogante"', autor: 'Julián de Zubiria Zamper', year: '2006', editorial: 'Magisterio', idioma: 'Español', area: 'Disciplinar', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=9122'},
+    {id: '65', cover: '/img/portadas/65.png', titulo: 'Orlando Flans borda y la investigación participativa', autor: 'Nicolás Armando Herrera y Alfonso Torres Carrillo', year: '2003', editorial: 'Laboratorio Educativo', idioma: 'Español', area: 'Investigativa', url: '/components/otros.html'},
+    {id: '62', cover: '/img/portadas/62.png', titulo: 'Cartas a quien pretende enseñar', autor: 'Paulo Freire', year: '2008', editorial: 'Siglo Xxi Editores Argentina', idioma: 'Español', area: 'Disciplinar', url: 'https://ugc.overdrive.com/media/3804359'},
   ]
 };
 
