@@ -80,7 +80,7 @@ nav img {
 
 #nav-ingenieria:hover {
     transition: 0.1s;
-    border: 3px solid var( --color-f-ingenieria);
+    border: 3px solid var(--color-f-ingenieria);
 }
 
 #nav-derecho:hover {
@@ -229,4 +229,38 @@ footer {
         font-size: 14px;
         justify-content: center;
     }
+}
+
+
+.proximamente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.div-prox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-prox h2 {
+    font-size: 45px;
+}
+
+.button-home {
+    background-color: #124622;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: azure;
+    font-weight: bolder;
+}
+
+.button-home:hover {
+    transition: 0.2s;
+    background-color: #FFF;
+    color: #124622;
+    border: 1px solid #124622;
 }
