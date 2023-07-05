@@ -20,7 +20,10 @@ const totalLiteratura = document.querySelector("[data-literatura]");
 const totalComunicativa = document.querySelector("[data-comunicativa]");
 const totalAcademica = document.querySelector("[data-academica]");
 
-
+const literatura = {
+  libros: [
+  ]
+};
 
 const comunicativa = {
   libros: [
