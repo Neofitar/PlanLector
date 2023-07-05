@@ -15,59 +15,50 @@ const crearNovedad = (titulo, autor, url, year, idioma, area, editorial, cover) 
   novedad.innerHTML = detallesNovedad;
   return novedad
 };
-  
-  const totalLiteratura = document.querySelector("[data-literatura]");
-  const totalComunicativa = document.querySelector("[data-comunicativa]");
-  const totalAcademica = document.querySelector("[data-academica]");
-  
-  
-  
-  
-  const literatura = {
-    libros: [
-      {id: '2',
-      cover: '',
-      titulo: 'AAAAAA', 
-      autor: 'Juan Miguel Álvarez',
-      year: '2023',
-      editorial: 'Temis',
-      idioma: 'Español',
-      area: 'Historia',
-      url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254916'},
-      {id: '2',cover: '/img/portadas/02_por.png',titulo: 'XXXXXX', autor: 'Juan Miguel Álvarez',tema: 'Derecho, política o periodísmo',descripcion: 'El galardonado periodista nos presenta esta recopilación de veinticinco crónicas hechas durante trece años a lo largo de las cuatro ciudades donde ha vivido: Cali, Bogotá, Pereira y Medellín, y otros rincones del país.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254916'},
-      {id: '3',cover: '/img/portadas/03_por.png',titulo: 'Democracia envenenada: Rusia en la era de Putin', autor: 'Bernhard Laugaland Mohr',tema: 'Derecho, política o periodísmo',descripcion: 'Este libro nos da un completo vistazo de cómo, en pleno siglo XXI, los gobernantes, siendo Putin solo un ejemplo, controlan los medios y la forma de pensar de sus habitantes para afianzarse, con mano dura, en el poder.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254914'},
+
+const totalLiteratura = document.querySelector("[data-literatura]");
+const totalComunicativa = document.querySelector("[data-comunicativa]");
+const totalAcademica = document.querySelector("[data-academica]");
+
+
+
+
+const literatura = {
+  libros:
+    [
+
     ]
-  };
-  
-  const comunicativa = {
-    libros: [
-      {id: '2',cover: '/img/portadas/02_por.png',titulo: 'XXXXXX', autor: 'Juan Miguel Álvarez',tema: 'Derecho, política o periodísmo',descripcion: 'El galardonado periodista nos presenta esta recopilación de veinticinco crónicas hechas durante trece años a lo largo de las cuatro ciudades donde ha vivido: Cali, Bogotá, Pereira y Medellín, y otros rincones del país.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254916'},
-      {id: '3',cover: '/img/portadas/03_por.png',titulo: 'Democracia envenenada: Rusia en la era de Putin', autor: 'Bernhard Laugaland Mohr',tema: 'Derecho, política o periodísmo',descripcion: 'Este libro nos da un completo vistazo de cómo, en pleno siglo XXI, los gobernantes, siendo Putin solo un ejemplo, controlan los medios y la forma de pensar de sus habitantes para afianzarse, con mano dura, en el poder.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254914'},
-      {id: '2',cover: '/img/portadas/02_por.png',titulo: 'XXXXXX', autor: 'Juan Miguel Álvarez',tema: 'Derecho, política o periodísmo',descripcion: 'El galardonado periodista nos presenta esta recopilación de veinticinco crónicas hechas durante trece años a lo largo de las cuatro ciudades donde ha vivido: Cali, Bogotá, Pereira y Medellín, y otros rincones del país.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254916'},
-      {id: '3',cover: '/img/portadas/03_por.png',titulo: 'Democracia envenenada: Rusia en la era de Putin', autor: 'Bernhard Laugaland Mohr',tema: 'Derecho, política o periodísmo',descripcion: 'Este libro nos da un completo vistazo de cómo, en pleno siglo XXI, los gobernantes, siendo Putin solo un ejemplo, controlan los medios y la forma de pensar de sus habitantes para afianzarse, con mano dura, en el poder.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254914'},
-    ]
-  };
-  
-  const academica = {
-    libros: [
-      {id: '2',cover: '/img/portadas/02_por.png',titulo: 'YYYY', autor: 'Juan Miguel Álvarez',tema: 'Derecho, política o periodísmo',descripcion: 'El galardonado periodista nos presenta esta recopilación de veinticinco crónicas hechas durante trece años a lo largo de las cuatro ciudades donde ha vivido: Cali, Bogotá, Pereira y Medellín, y otros rincones del país.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254916'},
-      {id: '3',cover: '/img/portadas/03_por.png',titulo: 'Democracia envenenada: Rusia en la era de Putin', autor: 'Bernhard Laugaland Mohr',tema: 'Derecho, política o periodísmo',descripcion: 'Este libro nos da un completo vistazo de cómo, en pleno siglo XXI, los gobernantes, siendo Putin solo un ejemplo, controlan los medios y la forma de pensar de sus habitantes para afianzarse, con mano dura, en el poder.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254914'},
-      {id: '2',cover: '/img/portadas/02_por.png',titulo: 'XXXXXX', autor: 'Juan Miguel Álvarez',tema: 'Derecho, política o periodísmo',descripcion: 'El galardonado periodista nos presenta esta recopilación de veinticinco crónicas hechas durante trece años a lo largo de las cuatro ciudades donde ha vivido: Cali, Bogotá, Pereira y Medellín, y otros rincones del país.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254916'},
-      {id: '3',cover: '/img/portadas/03_por.png',titulo: 'Democracia envenenada: Rusia en la era de Putin', autor: 'Bernhard Laugaland Mohr',tema: 'Derecho, política o periodísmo',descripcion: 'Este libro nos da un completo vistazo de cómo, en pleno siglo XXI, los gobernantes, siendo Putin solo un ejemplo, controlan los medios y la forma de pensar de sus habitantes para afianzarse, con mano dura, en el poder.',url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=254914'},
-    ]
-  };
-  
-  literatura.libros.forEach(libro => {
-    const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial, libro.cover);
-    totalLiteratura.appendChild(nuevaNovedad);
-  });
-  
-  comunicativa.libros.forEach(libro => {
-    const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial, libro.cover);
-    totalComunicativa.appendChild(nuevaNovedad);
-  });
-  
-  academica.libros.forEach(libro => {
-    const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial, libro.cover);
-    totalAcademica.appendChild(nuevaNovedad);
-  });
+};
+
+const comunicativa = {
+  libros: [
+  ]
+};
+
+const academica = {
+  libros: [
+    { id: '15', cover: '/img/portadas/15.png', titulo: 'Problemas Resueltos De Hidráulica De Canales', autor: 'Máximo Villón Béjar', year: '2007', editorial: 'Instituto Tecnológico De Costa Rica', idioma: 'Español', area: 'Disciplinar', url: 'https://ugc.overdrive.com/media/2654890' },
+    { id: '16', cover: '/img/portadas/16.png', titulo: 'Aplicaciones De Drones En Ingeniería Civil', autor: 'Arturo Tadeo Espinoza', year: '2022', editorial: 'Marcombo Ediciones Técnicas', idioma: 'Español', area: 'Disciplinar', url: 'N/A' },
+    { id: '17', cover: '/img/portadas/17.png', titulo: 'Ingeniería Estructural', autor: 'José Oscar Jaramillo Jiménez', year: '2010', editorial: 'Universidad Nacional De Colombia', idioma: 'Español', area: 'Disciplinar', url: 'https://elibro-net.bibliodigital.ugc.edu.co/es/lc/ugc/titulos/129997' },
+    { id: '18', cover: '/img/portadas/18.png', titulo: 'Energía Alternativa', autor: 'Marek Walisiewicz', year: '2005', editorial: 'Planeta Mexicana', idioma: 'Español', area: 'Investigativa', url: 'N/A' },
+    { id: '19', cover: '/img/portadas/19.png', titulo: 'El Violinista De Los Puentes Colgantes', autor: 'José María Villa', year: '1998', editorial: 'Panamericana', idioma: 'Español', area: 'Investigativa', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=151176' },
+    { id: '20', cover: '/img/portadas/20.png', titulo: 'Jerusalén. Caballo De Troya 1', autor: 'Jj Benites', year: '2012', editorial: 'Grupo Planeta', idioma: 'Español', area: 'Formación de lectura académica', url: 'https://ugc.overdrive.com/media/2000604' },
+    { id: '21', cover: '/img/portadas/21.png', titulo: 'Guía Para Implementar Y Gestionar Proyectos Bim Diario De Un Bim Manager David Barco Moreno', autor: ' Barco Moreno, David', year: '2018', editorial: ' Independently Published', idioma: 'Español', area: 'Disciplinar', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=198874' },
+    { id: '22', cover: '/img/portadas/22.png', titulo: 'Metodología De La Investigación Las Rutas Cuantitativa, Cualitativa Y Mixta ', autor: 'Roberto Hernández - Sampieri, Christian Paulina Mendoza Torres', year: '2018', editorial: ' Mcgraw Hill', idioma: 'Español', area: 'Investigativa', url: 'https://biblioteca.ugc.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=198501' },
+  ]
+};
+
+literatura.libros.forEach(libro => {
+  const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial, libro.cover);
+  totalLiteratura.appendChild(nuevaNovedad);
+});
+
+comunicativa.libros.forEach(libro => {
+  const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial, libro.cover);
+  totalComunicativa.appendChild(nuevaNovedad);
+});
+
+academica.libros.forEach(libro => {
+  const nuevaNovedad = crearNovedad(libro.titulo, libro.autor, libro.url, libro.year, libro.idioma, libro.area, libro.editorial, libro.cover);
+  totalAcademica.appendChild(nuevaNovedad);
+});
