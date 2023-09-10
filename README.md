@@ -1,11 +1,10 @@
 # Plan lector o decálogo literario
 Esta página web es un compendio de obras seleccionadas que orienta, promueve y fortalece la lectura en la comunidad académica grancolombiana. Se estructura en categorías temáticas que tienen por objetivo compilar obras para estimular el pensamiento crítico, espacios de discusión y construcción del conocimiento.
-
-![image](https://github.com/Neofitar/PlanLector/assets/111058276/cb49303f-b52f-4b74-ab72-b5c890ec5fca)
+### Resultado:
+Accede al proyecto: [👉 Clic aquí 👈](https://plan-lector-ugc.vercel.app/)
 ___
 
-## Resultado:
-Accede al proyecto: [👉 Clic aquí 👈](https://plan-lector-ugc.vercel.app/)
+![image](https://github.com/Neofitar/PlanLector/assets/111058276/cb49303f-b52f-4b74-ab72-b5c890ec5fca)
 ___
 
 ## Tecnologías utilizadas:
